@@ -4,6 +4,9 @@
 Peer Review Name: Brandon Langehennig
 Peer Review: Great job, code looks fine but, for some reason i was getting this error -----**dotnet watch ❌ Could not find a MSBuild project file in 'C:\Users\brand\OneDrive\Desktop\Repositories\Bug_Hunt_Docking_Bay---LotV'. Specify which project to use with the --project option**.-- could be on my end though, not sure.
 
+Peer Review: Zackary Santos
+Review: I tried to run the code but I was given the error: [DockingBayApi (net10.0)] Exited with error code -532462766
+
 Log **every** bug as you fix it, one row per bug. There are **15**: 5 syntax, 4 runtime, 6 logic.
 
 - **File**: which file the bug was in, e.g. `Services/ShipService.cs`
