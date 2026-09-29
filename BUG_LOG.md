@@ -7,6 +7,9 @@ Peer Review: Great job, code looks fine but, for some reason i was getting this 
 Peer Review: Zackary Santos
 Review: I tried to run the code but I was given the error: [DockingBayApi (net10.0)] Exited with error code -532462766
 
+Peer Review: Chris Estrada
+Review: Opened Terminal in DockingBayApi and checked to verify code was working. All the bugs look fixed in the log.
+
 Log **every** bug as you fix it, one row per bug. There are **15**: 5 syntax, 4 runtime, 6 logic.
 
 - **File**: which file the bug was in, e.g. `Services/ShipService.cs`
