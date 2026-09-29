@@ -32,7 +32,7 @@ Log **every** bug as you fix it, one row per bug. There are **15**: 5 syntax, 4 
 | 8 | ShipsController.cs | 37 | Logic | Had the inequality operator | Changed it to the equality operator |
 | 9 | ShipService.cs | 54 | Logic | Used addition assignment operator | Changed it to an equal sign, to assign the fuel percentage to 100 |
 | 10 | ShipsController.cs | 70 | Logic | It just says deleted | I changed it to deleted == false |
-| 11 | ShipService.cs | 61 | Logic | ForEach loop only reads through the item in every collection | Removed it and added FirstOrDefault |
+| 11 | ShipService.cs | 61 | Runtime | ForEach loop only reads through the item in every collection | Removed it and added FirstOrDefault |
 | 12 | ShipsController.cs | 49 | Logic | It was return OK() | I changed it to return CreatedAtAction() |
 | 13 | PilotsController.cs| 63 | Logic | It said hours < 0 | I changed it to the comparison operator <= 0 |
 | 14 | PilotService.cs | 49 | Logic | Didn't have an if statement for if pilots is null | Added in if pilots == null |
@@ -43,8 +43,8 @@ Log **every** bug as you fix it, one row per bug. There are **15**: 5 syntax, 4 
 | Kind | Found |
 |------|-------|
 | Syntax | 5 / 5 |
-| Runtime | 1 / 4 |
-| Logic | 9 / 6 |
+| Runtime | 2 / 4 |
+| Logic | 8 / 6 |
 
 ## Reflection
 
@@ -54,7 +54,7 @@ Answer each in 2–3 sentences.
 - The AddScope took me the longest, but it wasn't that I couldn't find it. I had changed it and kept checking my Postman and nothing was working. I had to restart my window.
 2. Pick one **runtime** error. What exception did it throw, and how did the error message help
    you find the line?
-- I actually had trouble deciphering what was a runtime error. The only one I really recall coming across was the AddScope one. Unfortunately, I don't recall the exception or error message exactly.
+- I actually had trouble deciphering what was a runtime error. The only one I really recall coming across was the AddScope and Foreach loop. Unfortunately, I don't recall the exception or error message exactly.
 3. `DELETE /api/ships/3` crashed with `Collection was modified`. Why can't a `foreach` loop keep
    going after you remove something from the list it's looping over?
 - Because foreach is used to read through every time in a collection. Therefore, it processes it as the collectiong being modified, once it removes something.
